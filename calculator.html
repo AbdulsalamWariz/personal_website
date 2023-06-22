@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+       body{
+           background-color: aqua;
+           text-align: center;
+       }
+       
+       h1{
+           font-size: 50px;
+       }
+       
+       p{
+           font-size: 30px;
+           font-weight: bolder;
+       }
+       
+       .increment{
+           background-color: green;
+           border: none;
+           outline: none;
+           padding: 1rem;
+           margin: 1rem;
+       }
+       
+       .decrement{
+           background-color: red;
+           border: none;
+           outline: none;
+           padding: 1rem;
+           margin: 1rem;
+       }
+       
+    </style>
+</head>
+<body>
+    
+    <h1>COUNTER</h1>
+    <p>0</p>
+    <button class="increment" onclick="up()">INCREMENT</button>
+    <button class="decrement" onclick="down()">DECREMENT</button>
+    
+<script>
+let btn = document.querySelector("button");
+let counter = document.querySelector("p");
+let count = 0;
+
+function up() {
+    count += 1;
+    counter.textContent = count;
+}
+
+function down() {
+    count -= 1;
+    counter.textContent = count;
+}
+
+</script>
+</body>
+</html>

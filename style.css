@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BEGINNING OF NAVBAR */
+
+nav{
+    display: flex;
+    overflow-x: hidden;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(157, 190, 242);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.hamburger-btn{
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+@media(max-width: 800px){
+    .hamburger-btn{
+        display: flex;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    nav ul li{
+        width: 33.3%;
+    }
+    
+    nav ul li a{
+        padding: 0.5rem;
+    }
+    
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul.active{
+        display: flex;
+    }
+    
+}
+
+/* END OF NAVBAR */
+
+
+
+/* BEGINNING OF HERO */
+.hero{
+    width: 100vw;
+    display: flex;
+    padding: 2rem;
+    background: linear-gradient(to top, rgb(157, 190, 242), rgb(58, 118, 214));
+    color: white;
+}
+
+.about-me{
+    width: 50%;
+    text-align: center;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me h1{
+    margin: 10px;
+    font-size: 40px;
+}
+
+.about-me h2, p{
+    margin-bottom: 10px;
+}
+
+.about-me button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    background-color: rgb(220, 220, 220);
+}
+
+.my-photo{
+    width: 50%;
+    margin-left: 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-photo img {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+}
+
+@media(max-width: 800px){
+    .hero{
+        flex-direction: column;
+    }
+    
+    .about-me,
+    .my-photo{
+        width: 100%;
+    }
+    
+    .my-photo img{
+        border-radius: 50%;
+    }
+    
+    
+}
+/* END OF HERO */
+
+
+
+/* BEGINNING OF SKILLS */
+.skills{
+    padding: 2rem;
+    text-align: center;
+    color: blue;
+}
+
+.skills ul{
+    display: flex;
+    list-style: ;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+@media(max-width: 800px){
+    .skills ul{
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    .skills ul li{
+        margin: 5px;
+    }
+}
+
+/* END OF SKILLS */
+
+
+/* PROJECTS */
+.projects{
+    background: linear-gradient(to top, rgb(157, 190, 242), rgb(58, 118, 214));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5rem;
+    color: white;
+}
+
+.projects .second-h2{
+    margin-top: 2rem;
+}
+
+.projects button{
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+}
+
+.projects a{
+    text-decoration: none;
+    color: ;
+}
+/* PROJECTS */
+
+
+
+.contact{
+    width: 100vw;
+    padding: 1rem 0rem 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 80%;
+    margin-top: 2rem;
+    border: 1px solid blue;
+    border-radius: 20px;
+    box-shadow: 28px 46px 32px 8px rgba(0,0,0,0.1);
+}
+
+label{
+    margin: 10px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    border-bottom-style: solid;
+    margin: 5px;
+}
+
+textarea{
+    padding: 5px;
+    border-radius: 10px;
+    height: 5rem;
+}
+
+form button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 7.5px;
+    color: blue;
+    border: 1px solid blue;
+}
+
+
+footer{
+    width: 100vw;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+}
